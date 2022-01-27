@@ -32,18 +32,6 @@
         [
           "(min(@cl, 10))d6",
           "fire"
-        ],
-        [
-          "(min(floor(@cl / 2), 5))d6",
-          "fire"
-        ],
-        [
-          "(min(floor(@cl / 4), 5))d6",
-          "fire"
-        ],
-        [
-          "(min(floor(@cl / 8), 5))d6",
-          "fire"
         ]
       ],
       "critParts": [],
@@ -62,7 +50,12 @@
       "type": "ref",
       "description": "Reflex half"
     },
-    "effectNotes": [],
+    "effectNotes": [
+      "DC [[(10 + @sl + @ablMod)-2]] for secondary bolts",
+      "[[(min(floor(@cl / 2), 5))d6]] damage on 2nd target",
+      "[[(min(floor(@cl / 4), 2))d6]] damage on 3rd target",
+      "[[(min(floor(@cl / 8), 1))d6]] damage on 4th target"
+    ],
     "attackNotes": [],
     "links": {
       "children": []
