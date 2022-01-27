@@ -51,8 +51,10 @@
       "description": "Reflex half"
     },
     "effectNotes": [
-      "DC [[(@dc)-2]] for secondary bolts",
-      "[[(min(floor(@cl / 2), 5))d6]] 2nd target, [[(min(floor(@cl / 4), 2))d6]] 3rd target, [[(min(floor(@cl / 8), 1))d6]] 4th target"
+      "DC [[(10 + @sl + @ablMod)-2]] for secondary bolts",
+      "[[(min(floor(@cl / 2), 5))d6]] damage on 2nd target",
+      "[[(min(floor(@cl / 4), 2))d6]] damage on 3rd target",
+      "[[(min(floor(@cl / 8), 1))d6]] damage on 4th target"
     ],
     "attackNotes": [],
     "links": {
